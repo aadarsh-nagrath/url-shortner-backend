@@ -29,4 +29,16 @@ exports.shortenUrl = async (req, res) => {
   }
 };
 
+exports.getUrl = async (req, res) => {
+  const { urlCode } = req.params;
 
+  try {
+    const url = await Url.findOne({ urlCode });
+    if (!url) {
+      return res.status(404).json({ status: false, message: 'URL not found' });
+    }
+    res.redirect(url.longUrl);
+  } catch (error) {
+    res.status(500).json({ status: false, message: error.message });
+  }
+};
