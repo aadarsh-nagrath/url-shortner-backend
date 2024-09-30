@@ -200,6 +200,14 @@ NOTE - In post man in Authorisation choose Bearer Token and add the token genera
   ```
   ![image](https://github.com/user-attachments/assets/086debb1-f507-4587-b44e-18227524cd31)
 
+****
+
+#### GET `/:urlCode`
+
+- **Description**: Redirects to the original URL corresponding to the shortened URL code.
+- **Request Parameter**: `urlCode` - Shortened URL code
+- **Response**: Redirects to the original URL (302 Redirect)
+
 
 ## Future Enhancements
 
@@ -211,3 +219,4 @@ NOTE - In post man in Authorisation choose Bearer Token and add the token genera
 ## License
 
 This project is licensed under the MIT License.
+
