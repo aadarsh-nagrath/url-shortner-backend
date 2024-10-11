@@ -1,4 +1,4 @@
-# CAPEX ASSIGNMENT URL Shortener API
+# URL Shortener API
 
 A URL shortening service where users can create shortened URLs for long URLs, manage their accounts with sign-up, login, and OTP-based password recovery, and use caching for optimized database calls.
 
